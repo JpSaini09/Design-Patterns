@@ -7,10 +7,14 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Publishes test code messages to the listeners on update test code call method
+ */
+
 @Service
 public class MessagePublisher implements Observable {
 
-    private List<Observer> listenersList = new ArrayList<Observer>();
+    private List<Observer> listenersList = new ArrayList<>();
     private int testMessageCode  = 0;
 
     @Override

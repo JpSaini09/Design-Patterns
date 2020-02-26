@@ -1,14 +1,15 @@
 package com.designpatterns.Design.Patterns.ObserverPattern.Interfaces;
 
-import com.designpatterns.Design.Patterns.ObserverPattern.Implementations.MessagePublisher;
-
 /**
- *
+ * Publisher interface with abstract methods to be implemented by the subjects.
  */
 
 public interface Observable {
-    public void addObserver(Observer o);
-    public void removerObserver(Observer o);
-    public void notifyUpdate();
-    public int getState();
+    void addObserver(Observer o);
+
+    void removerObserver(Observer o);
+
+    void notifyUpdate();
+
+    int getState();
 }
